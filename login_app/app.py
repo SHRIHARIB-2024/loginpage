@@ -44,4 +44,4 @@ if __name__ == '__main__':
 #git add .
 #git commit -m "initial"
 #git push origin
-#unicorn app:app --host 0.0.0.0 --port 8000
+#gunicorn app:app --host 0.0.0.0 --port 8000
