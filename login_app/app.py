@@ -41,7 +41,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)
 
 #git status
-#git add.
+#git add .
 #git commit -m "initial"
 #git push origin
 #unicorn app:app --host 0.0.0.0 --port 8000
