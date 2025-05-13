@@ -38,10 +38,12 @@ def login():
         return "Invalid credentials. Try again."
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=8000, debug=True)
 
 #git status
 #git add .
 #git commit -m "initial"
 #git push origin
 #gunicorn app:app --host 0.0.0.0 --port 8000
+#gunicorn --bind=0.0.0.0 --timeout 600 login_app.app:app
+#gunicorn --chdir login_app app:app
