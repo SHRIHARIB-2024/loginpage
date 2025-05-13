@@ -13,7 +13,8 @@ def get_db_connection():
         user=os.environ['DB_USER'],
         password=os.environ['DB_PASSWORD'],
         database=os.environ['DB_NAME'],
-        ssl={'ca': 'C:/Users/shrih/Downloads/DigiCertGlobalRootCA.crt.pem'}  # SSL added here
+        #ssl={'ca': 'C:/Users/shrih/Downloads/DigiCertGlobalRootCA.crt.pem'}  # SSL added here
+        ssl_disabled=True  
     )
     return conn
 
