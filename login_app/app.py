@@ -7,13 +7,14 @@ app = Flask(__name__)
 
 # Load environment variables from .env file
 load_dotenv()
+ssl_path = os.path.join(os.path.dirname(__file__), "DigiCertGlobalRootCA.crt.pem")
 def get_db_connection():
     conn = pymysql.connect(
         host=os.environ['DB_HOST'],
         user=os.environ['DB_USER'],
         password=os.environ['DB_PASSWORD'],
         database=os.environ['DB_NAME'],
-        ssl={'ca': 'C:/Users/shrih/Downloads/DigiCertGlobalRootCA.crt.pem'}  # SSL added here
+        ssl={'ca': ssl_path}  # SSL added here
         #ssl_disabled=True  
     )
     return conn
