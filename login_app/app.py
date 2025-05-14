@@ -46,8 +46,5 @@ if __name__ == '__main__':
 #git commit -m "initial"
 #git push origin
 #gunicorn app:app --host 0.0.0.0 --port 8000
-<<<<<<< HEAD
 #gunicorn --bind=0.0.0.0 --timeout 600 login_app.app:app
 #gunicorn --chdir login_app app:app
-=======
->>>>>>> 74f17e46a9c8dfb54f97f2afd18383d1b672ac2b
